@@ -1,0 +1,21 @@
+{
+  "name": "inclusionist-commons",
+  "private": true,
+  "type": "module",
+  "description": "Shared versioned TypeScript packages (@jrocha-io/*) for The Inclusionist and its labs.",
+  "license": "GPL-3.0-or-later",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "tsc -b --pretty",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "npm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "typescript": "^5.7.0"
+  }
+}

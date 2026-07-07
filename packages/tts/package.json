@@ -1,0 +1,31 @@
+{
+  "name": "@jrocha-io/tts",
+  "version": "0.0.0",
+  "description": "TTS engine ports + adapters (Web Speech, eSpeak-NG, sherpa-onnx-wasm, Kokoro-WebGPU) for The Inclusionist and its labs.",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrocha-io/inclusionist-commons.git",
+    "directory": "packages/tts"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
