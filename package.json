@@ -10,12 +10,14 @@
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "typecheck": "tsc -b --pretty",
+    "test": "vitest run",
     "changeset": "changeset",
     "version": "changeset version",
     "release": "npm run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vitest": "^4.0.0"
   }
 }
