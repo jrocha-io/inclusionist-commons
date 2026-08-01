@@ -25,6 +25,8 @@ export {
   parseEngineParams,
 } from './engine-params.js';
 export type { EngineParams } from './engine-params.js';
+export { WebSpeechEngine, platformSpeechApi } from './engines/web-speech.js';
+export type { SpeechApi } from './engines/web-speech.js';
 
 /** Package version marker (bumped by Changesets on release). */
-export const VERSION = '0.1.0';
+export const VERSION = '0.2.0';
