@@ -1,0 +1,31 @@
+{
+  "name": "@jrocha-io/model-fetch",
+  "version": "0.1.0",
+  "description": "Model/asset fetcher DAO — fetch + Cache API + streaming progress + first-download timestamp.",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrocha-io/inclusionist-commons.git",
+    "directory": "packages/model-fetch"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

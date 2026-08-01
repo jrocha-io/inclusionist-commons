@@ -15,7 +15,7 @@ export {
   hfUrl,
 } from './catalog.js';
 export type { PiperOption, PiperGroup, KokoroVariant, KokoroVoice } from './catalog.js';
-export { computeRtf, peakOf, gainFromPeak } from './metrics.js';
+export { computeRtf } from './metrics.js';
 export { parseDownloadedRepos } from './cache.js';
 export {
   ENGINE_MULTI,
