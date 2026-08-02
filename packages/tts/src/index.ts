@@ -27,6 +27,8 @@ export {
 export type { EngineParams } from './engine-params.js';
 export { WebSpeechEngine, platformSpeechApi } from './engines/web-speech.js';
 export type { SpeechApi } from './engines/web-speech.js';
+export { MeSpeakEngine } from './engines/mespeak.js';
+export type { MeSpeakApi, MeSpeakVoice, MeSpeakEngineDeps } from './engines/mespeak.js';
 
 /** Package version marker (bumped by Changesets on release). */
-export const VERSION = '0.2.0';
+export const VERSION = '0.3.0';
